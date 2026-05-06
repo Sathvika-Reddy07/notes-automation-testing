@@ -1,0 +1,6 @@
+selenium
+pytest
+requests
+allure-pytest
+webdriver-manager
+pytest-xdist
