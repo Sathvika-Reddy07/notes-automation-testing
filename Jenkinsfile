@@ -3,10 +3,10 @@ pipeline {
 
     stages {
 
-        stage('Checkout Source Code') {
+        stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/Sathvika-Reddy07/notes-automation-testing.git'
+                    url: 'https://github.com/Sathvika-Reddy07/notes-automation-testing.git'
             }
         }
 
@@ -20,17 +20,23 @@ pipeline {
             }
         }
 
+        stage('Prepare Reports Folder') {
+            steps {
+                bat 'mkdir reports'
+            }
+        }
+
         stage('Run Tests (Parallel Execution)') {
             steps {
                 bat '''
-                venv\\Scripts\\python -m pytest -n 2 --html=reports/report.html --self-contained-html
+                venv\\Scripts\\python -m pytest -n 2 --html=reports\\report.html --self-contained-html
                 '''
             }
         }
 
         stage('Archive Artifacts') {
             steps {
-                archiveArtifacts artifacts: 'reports/**, logs/**, screenshots/**', fingerprint: true
+                archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
             }
         }
     }
