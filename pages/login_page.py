@@ -23,13 +23,13 @@ class LoginPage(BasePage):
     )
 
     # -------------------------
-    # OPEN LOGIN PAGE
+    # OPEN PAGE
     # -------------------------
     def open(self):
         self.driver.get("https://practice.expandtesting.com/notes/app/login")
 
     # -------------------------
-    # LOGIN FUNCTION
+    # LOGIN FLOW (AGENTIC SAFE)
     # -------------------------
     def login(self, email, password):
         self.open()
@@ -40,10 +40,10 @@ class LoginPage(BasePage):
         self.click(self.LOGIN_BTN)
 
     # -------------------------
-    # GET ERROR MESSAGE
+    # ERROR HANDLING
     # -------------------------
     def get_error(self):
         try:
-            return self.wait_visible(self.ERROR_MSG).text
+            return self.wait.visible(self.ERROR_MSG).text
         except TimeoutException:
             return self.driver.page_source

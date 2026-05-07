@@ -1,0 +1,15 @@
+2026-05-07 18:50:33 - INFO - PASS: tests/api/test_api_notes.py::test_delete_note2026-05-07 18:50:34 - INFO - PASS: tests/api/test_api_notes.py::test_create_note
+20262026-05-07 18:50:35 - INFO - SESSION STARTED: ecf7280bac81bfb1dceed3ad40024e20262026-05-07 18:50:54 - INFO - PASS: tests/e2e/test_e2e_notes.py::test_api_to_ui
+2026-05-07 18:50:54 - INFO - SESSION ENDED
+2026-05-07 18:50:55 - INFO - SESSION STARTED: 1589b0a41c4d529c9d260c4d81444825
+202026-05-07 18:51:15 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_invalid_password
+2026-05-07 18:51:15 - INFO - SESSION ENDED
+2026-05-07 18:51:16 - INFO - SESSION STARTED: 5e92711bcf6236aad70b78ec68e80d6f
+2026-05-07 18:51:33 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_empty
+2026-05-07 18:51:33 - INFO - SESSION ENDED
+sts/negat2026-05-07 18:50:52 - INFO - SESSION START2026-05-07 18:50:54 - INFO - PASS: tes2026-05-07 18:51:03 - INFO - PASS: tests/u2026-05-07 18:51:03 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_title
+2026-05-07 18:51:04 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_valid
+202026-05-07 18:51:39 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_desc
+2026-05-07 18:51:39 - INFO - SESSION ENDED
+_ui_notes.py::test_login_empty
+2026-05-07 18:51:39 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_desc

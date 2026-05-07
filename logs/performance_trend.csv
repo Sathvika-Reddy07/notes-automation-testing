@@ -1,0 +1,23 @@
+Layer,Action,ResponseTime
+API,Fetch Notes Before Delete,3.76
+API,Get Notes API,1.29
+API,Delete Note API,2.06
+UI,API To UI Flow,0.26
+UI,UI To API Flow,0.41
+API,Create Note API,6.57
+UI,Invalid Login Page,0.19
+UI,Valid Login Page,0.21
+UI,Missing Title Flow,0.21
+UI,Empty Login Page,0.20
+UI,Missing Description Flow,0.17
+API,Get Notes API,1.37
+API,Fetch Notes Before Delete,1.39
+API,Delete Note API,1.27
+API,Create Note API,1.52
+UI,UI To API Flow,0.57
+UI,API To UI Flow,0.37
+UI,Invalid Login Page,0.39
+UI,Missing Title Flow,0.33
+UI,Valid Login Page,0.45
+UI,Missing Description Flow,0.40
+UI,Empty Login Page,0.27
