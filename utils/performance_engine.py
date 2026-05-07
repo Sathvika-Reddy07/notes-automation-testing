@@ -21,22 +21,22 @@ class APIPerformance:
 
         # Print formatted API performance log
         print(
-            f"\n⚡ {api_name} Response Time: "
+            f"\n {api_name} Response Time: "
             f"{response_time:.2f} sec"
         )
 
         # Performance grading based on response time buckets
         if response_time < 2:
-            print("✅ Excellent API Performance")
+            print(" Excellent API Performance")
 
         elif response_time < 5:
-            print("✅ Good API Performance")
+            print(" Good API Performance")
 
         elif response_time < 10:
-            print("⚠️ Acceptable API Performance")
+            print(" Acceptable API Performance")
 
         else:
-            print("❌ Slow API Performance")
+            print(" Slow API Performance")
 
         # Log performance metrics for trend analysis across runs
         PerformanceTrendLogger.log(
@@ -82,22 +82,22 @@ class UIPerformance:
 
         # Print UI performance metric for debugging and reporting
         print(
-            f"\n🌐 {page_name} Load Time: "
+            f"\n {page_name} Load Time: "
             f"{load_time:.2f} sec"
         )
 
         # UI performance classification logic
         if load_time < 3:
-            print("✅ Excellent UI Performance")
+            print(" Excellent UI Performance")
 
         elif load_time < 6:
-            print("✅ Good UI Performance")
+            print(" Good UI Performance")
 
         elif load_time < 10:
-            print("⚠️ Acceptable UI Performance")
+            print(" Acceptable UI Performance")
 
         else:
-            print("❌ Slow UI Performance")
+            print(" Slow UI Performance")
 
         # Log UI performance data for historical trend tracking
         PerformanceTrendLogger.log(
@@ -168,7 +168,7 @@ class PerformanceTrendLogger:
 
         # Console log for traceability of performance tracking
         print(
-            f"📊 Trend Logged -> "
+            f" Trend Logged -> "
             f"{layer} | {action} | "
             f"{response_time:.2f} sec"
         )

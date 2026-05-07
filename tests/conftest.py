@@ -52,7 +52,7 @@ def pytest_sessionstart(session):
     except Exception as e:
 
         # Print warning if folder creation fails
-        print(f"⚠️ Log folder issue: {e}")
+        print(f" Log folder issue: {e}")
 
 
 # TEST RESULT LOGGING
