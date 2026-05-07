@@ -34,10 +34,9 @@ pipeline {
                 --html=reports\\report.html ^
                 --self-contained-html ^
                 --capture=tee-sys
-                exit 0
                 '''
-    }
-}
+            }
+        }
 
         stage('Archive Artifacts') {
             steps {
