@@ -22,7 +22,10 @@ pipeline {
 
         stage('Prepare Reports Folder') {
             steps {
-                bat 'if not exist reports mkdir reports'
+                bat '''
+                if not exist reports mkdir reports
+                if not exist allure-results mkdir allure-results
+                '''
             }
         }
 
@@ -30,9 +33,11 @@ pipeline {
             steps {
                 bat '''
                 if not exist reports mkdir reports
-                venv\\Scripts\\python -m pytest -n 2 ^
+
+                venv\\Scripts\\python -m pytest -n 4 ^
                 --html=reports\\report.html ^
                 --self-contained-html ^
+                --alluredir=allure-results ^
                 --capture=tee-sys
                 '''
             }
@@ -47,7 +52,25 @@ pipeline {
 
     post {
         always {
+
             echo 'Pipeline Execution Completed'
+
+            // 📊 HTML REPORT PUBLISH
+            publishHTML([
+                reportDir: 'reports',
+                reportFiles: 'report.html',
+                reportName: 'HTML Test Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ])
+
+            // 📈 ALLURE REPORT PUBLISH
+            allure([
+                includeProperties: false,
+                jdk: '',
+                results: [[path: 'allure-results']]
+            ])
         }
     }
 }
