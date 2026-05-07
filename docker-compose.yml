@@ -1,29 +1,63 @@
+# docker-compose.yml
+
+# Docker Compose specification version used for Selenium Grid orchestration
 version: "3.8"
 
 services:
 
+  # ==========================================
+  # SELENIUM GRID HUB (Central Controller)
+  # ==========================================
   selenium-hub:
+    # Official Selenium Grid Hub image (version pinned for stability)
     image: selenium/hub:4.21.0
+
+    # Container name for easy identification in Docker environment
     container_name: selenium-hub
+
+    # Expose Hub UI + Grid endpoint on port 4444
     ports:
       - "4444:4444"
+
+    # Attach hub to shared custom network for node communication
     networks:
       - grid
 
+
+  # ==========================================
+  # CHROME NODE (Execution Worker)
+  # ==========================================
   chrome:
+    # Selenium Chrome Node image for executing browser tests
     image: selenium/node-chrome:4.21.0
+
+    # Increase shared memory to avoid Chrome crashes in containerized runs
     shm_size: 2gb
+
+    # Ensure hub starts before node registration begins
     depends_on:
       - selenium-hub
+
+    # Environment variables for Grid event bus communication
     environment:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+    # Attach node to same network as hub for internal communication
     networks:
       - grid
+
+    # Enable horizontal scaling for parallel test execution
+    # Multiple Chrome instances improve concurrency in CI/CD pipelines
     deploy:
       replicas: 3   # 👈 IMPORTANT for parallel execution
 
+
+# ==========================================
+# NETWORK CONFIGURATION
+# ==========================================
 networks:
   grid:
+    # Bridge network enables isolated container communication
     driver: bridge

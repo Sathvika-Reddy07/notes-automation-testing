@@ -4,7 +4,7 @@ BASE_URL = "https://practice.expandtesting.com/notes/app"
 # API URL
 API_BASE_URL = "https://practice.expandtesting.com/notes/api"
 
-# Credentials (⚠️ replace with your real account)
+# Credentials 
 EMAIL = "theepireddysathvika@gmail.com"
 PASSWORD = "SathvikaReddy7"
 

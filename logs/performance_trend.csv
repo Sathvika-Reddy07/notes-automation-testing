@@ -21,3 +21,26 @@ UI,Missing Title Flow,0.33
 UI,Valid Login Page,0.45
 UI,Missing Description Flow,0.40
 UI,Empty Login Page,0.27
+API,Fetch Notes Before Delete,0.30
+API,Get Notes API,0.36
+API,Delete Note API,0.44
+API,Create Note API,0.65
+API,Fetch Notes Before Delete,4.01
+API,Get Notes API,1.12
+API,Delete Note API,5.73
+API,Create Note API,4.46
+API,Fetch Notes Before Delete,0.56
+API,Get Notes API,0.33
+API,Delete Note API,0.51
+API,Create Note API,0.61
+API,Get Notes API,0.31
+API,Fetch Notes Before Delete,0.55
+API,Delete Note API,1.74
+API,Create Note API,0.82
+UI,UI To API Flow,0.43
+UI,API To UI Flow,0.35
+UI,Valid Login Page,0.36
+UI,Empty Login Page,0.31
+UI,Invalid Login Page,0.31
+UI,Missing Description Flow,0.29
+UI,Missing Title Flow,0.34
