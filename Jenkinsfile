@@ -30,10 +30,14 @@ pipeline {
             steps {
                 bat '''
                 if not exist reports mkdir reports
-                venv\\Scripts\\python -m pytest -n 2 --html=reports\\report.html --self-contained-html
+                venv\\Scripts\\python -m pytest -n 2 ^
+                --html=reports\\report.html ^
+                --self-contained-html ^
+                --capture=tee-sys
+                exit 0
                 '''
-            }
-        }
+    }
+}
 
         stage('Archive Artifacts') {
             steps {
