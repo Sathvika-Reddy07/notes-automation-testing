@@ -22,13 +22,14 @@ pipeline {
 
         stage('Prepare Reports Folder') {
             steps {
-                bat 'mkdir reports'
+                bat 'if not exist reports mkdir reports'
             }
         }
 
-        stage('Run Tests (Parallel Execution)') {
+        stage('Run Tests') {
             steps {
                 bat '''
+                if not exist reports mkdir reports
                 venv\\Scripts\\python -m pytest -n 2 --html=reports\\report.html --self-contained-html
                 '''
             }
