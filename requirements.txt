@@ -4,3 +4,4 @@ requests
 allure-pytest
 webdriver-manager
 pytest-xdist
+pytest-html
