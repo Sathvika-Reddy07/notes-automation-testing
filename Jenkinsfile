@@ -1,7 +1,6 @@
 pipeline {
     agent any
 
-
     stages {
 
         stage('Checkout Source Code') {
@@ -11,30 +10,20 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Setup & Install Dependencies') {
             steps {
                 bat '''
                 python -m venv venv
-                venv\\Scripts\\activate
-                pip install -r requirements.txt
+                venv\\Scripts\\python -m pip install --upgrade pip
+                venv\\Scripts\\pip install -r requirements.txt
                 '''
             }
         }
 
-        stage('Parallel Test Execution') {
+        stage('Run Tests (Parallel Execution)') {
             steps {
                 bat '''
-                venv\\Scripts\\activate
-                pytest -n auto
-                '''
-            }
-        }
-
-        stage('Generate HTML Report') {
-            steps {
-                bat '''
-                venv\\Scripts\\activate
-                pytest --html=reports/report.html --self-contained-html
+                venv\\Scripts\\python -m pytest -n 2 --html=reports/report.html --self-contained-html
                 '''
             }
         }
