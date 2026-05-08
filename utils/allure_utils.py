@@ -1,3 +1,4 @@
+#It helps us attach API responses or data into Allure reports for better analysis and debugging.
 import allure
 
 # Utility function to attach JSON data into Allure report

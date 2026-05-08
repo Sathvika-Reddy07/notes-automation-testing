@@ -5,9 +5,8 @@ import csv
 from pathlib import Path
 
 
-# ==========================================
 # API PERFORMANCE MONITOR
-# ==========================================
+
 class APIPerformance:
 
     # SLA threshold for API response time validation (in seconds)
@@ -54,9 +53,8 @@ class APIPerformance:
         )
 
 
-# ==========================================
 # UI PERFORMANCE MONITOR
-# ==========================================
+
 class UIPerformance:
 
     # SLA threshold for UI page load time validation (in seconds)
@@ -115,9 +113,8 @@ class UIPerformance:
         )
 
 
-# ==========================================
 # PERFORMANCE TREND LOGGER
-# ==========================================
+
 class PerformanceTrendLogger:
 
     # CSV file path for storing performance trend history

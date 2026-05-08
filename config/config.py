@@ -15,4 +15,4 @@ TIMEOUT = 15
 BROWSER = "chrome"
 
 # Screenshot path
-SCREENSHOT_PATH = "reports/screenshots/"
+SCREENSHOT_PATH = "logs/screenshots/"

@@ -67,20 +67,20 @@ class PerformanceMonitor:
         response_time = response.elapsed.total_seconds()
 
         # Log measured response time for debugging and reporting
-        print(f"\n⚡ API Response Time: {response_time:.2f} sec")
+        print(f"\n API Response Time: {response_time:.2f} sec")
 
         # Performance classification logic based on response latency
         if response_time < 2:
-            print("✅ Excellent Performance")
+            print("Excellent Performance")
 
         elif response_time < 5:
-            print("✅ Good Performance")
+            print(" Good Performance")
 
         elif response_time < 10:
-            print("⚠️ Acceptable Performance")
+            print(" Acceptable Performance")
 
         else:
-            print("❌ Slow Performance")
+            print(" Slow Performance")
 
         # Enforce performance SLA; fail test if threshold is exceeded
         assert (

@@ -5,9 +5,8 @@ version: "3.8"
 
 services:
 
-  # ==========================================
   # SELENIUM GRID HUB (Central Controller)
-  # ==========================================
+
   selenium-hub:
     # Official Selenium Grid Hub image (version pinned for stability)
     image: selenium/hub:4.21.0
@@ -24,9 +23,8 @@ services:
       - grid
 
 
-  # ==========================================
   # CHROME NODE (Execution Worker)
-  # ==========================================
+
   chrome:
     # Selenium Chrome Node image for executing browser tests
     image: selenium/node-chrome:4.21.0
@@ -54,9 +52,8 @@ services:
       replicas: 3   # 👈 IMPORTANT for parallel execution
 
 
-# ==========================================
 # NETWORK CONFIGURATION
-# ==========================================
+
 networks:
   grid:
     # Bridge network enables isolated container communication
