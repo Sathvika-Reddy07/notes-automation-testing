@@ -1,36 +1,36 @@
-2026-05-08 09:19:49 - INFO - PASS: tests/api/test_api_notes.py::test_get_notes
-2026-05-08 09:19:51 - INFO - PASS: tests/api/test_api_notes.py::test_create_note
-2026-05-08 09:19:53 - INFO - PASS: tests/api/test_api_notes.py::test_delete_note
-2026-05-08 09:19:54 - INFO - PASS: tests/api/test_api_notes.py::test_invalid_token
-2026-05-08 09:19:57 - INFO - PASS: tests/api/test_api_notes.py::test_delete_invalid_id
-2026-05-08 09:19:59 - INFO - SESSION STARTED: bc421baea15781d3dcb29b0cebfb6927
-2026-05-08 09:19:59 - INFO - PASS: tests/debug/test_session_debug.py::test_session_1
-2026-05-08 09:19:59 - INFO - SESSION ENDED
-2026-05-08 09:20:00 - INFO - SESSION STARTED: d0597e3624ef6c4490759335d0d5854d
-2026-05-08 09:20:00 - INFO - PASS: tests/debug/test_session_debug.py::test_session_2
-2026-05-08 09:20:00 - INFO - SESSION ENDED
-2026-05-08 09:20:01 - INFO - SESSION STARTED: 7cacd793711883ba96fa86f866863617
-2026-05-08 09:20:01 - INFO - PASS: tests/debug/test_session_debug.py::test_session_3
-2026-05-08 09:20:01 - INFO - SESSION ENDED
-2026-05-08 09:20:02 - INFO - SESSION STARTED: b9064f83f916e03db3f8d0a8798129bf
-2026-05-08 09:20:16 - INFO - PASS: tests/e2e/test_e2e_notes.py::test_ui_to_api
-2026-05-08 09:20:16 - INFO - SESSION ENDED
-2026-05-08 09:20:17 - INFO - SESSION STARTED: dac8b74b587c917b6838b2438e6ae6ba
-2026-05-08 09:20:31 - INFO - PASS: tests/e2e/test_e2e_notes.py::test_api_to_ui
-2026-05-08 09:20:31 - INFO - SESSION ENDED
-2026-05-08 09:20:32 - INFO - PASS: tests/negative/test_negative.py::test_empty_payload
-2026-05-08 09:20:33 - INFO - SESSION STARTED: ae76d83520aa65f391f6278de6ffed01
-2026-05-08 09:20:39 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_valid
-2026-05-08 09:20:39 - INFO - SESSION ENDED
-2026-05-08 09:20:40 - INFO - SESSION STARTED: e892e8456adcb88b0c9d249b2b93182b
-2026-05-08 09:21:14 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_invalid_password
-2026-05-08 09:21:14 - INFO - SESSION ENDED
-2026-05-08 09:21:15 - INFO - SESSION STARTED: 726c3be4c370d578d514c1de6703b2d8
-2026-05-08 09:21:23 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_empty
-2026-05-08 09:21:23 - INFO - SESSION ENDED
-2026-05-08 09:21:24 - INFO - SESSION STARTED: 1827d4bda8488f1855f7345645bead4c
-2026-05-08 09:21:33 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_title
-2026-05-08 09:21:33 - INFO - SESSION ENDED
-2026-05-08 09:21:34 - INFO - SESSION STARTED: d8c59f164b5fb96fc63c263b8cc232f6
-2026-05-08 09:21:43 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_desc
-2026-05-08 09:21:43 - INFO - SESSION ENDED
+2026-05-17 15:09:25 - INFO - PASS: tests/api/test_api_notes.py::test_get_notes
+2026-05-17 15:09:27 - INFO - PASS: tests/api/test_api_notes.py::test_create_note
+2026-05-17 15:09:29 - INFO - PASS: tests/api/test_api_notes.py::test_delete_note
+2026-05-17 15:09:30 - INFO - PASS: tests/api/test_api_notes.py::test_invalid_token
+2026-05-17 15:09:31 - INFO - PASS: tests/api/test_api_notes.py::test_delete_invalid_id
+2026-05-17 15:09:32 - INFO - SESSION STARTED: 303f536377d936583ca687b2c7823530
+2026-05-17 15:09:32 - INFO - PASS: tests/debug/test_session_debug.py::test_session_1
+2026-05-17 15:09:32 - INFO - SESSION ENDED
+2026-05-17 15:09:33 - INFO - SESSION STARTED: 66e7a0e5b4e78de41cb2d8e2c021914c
+2026-05-17 15:09:33 - INFO - PASS: tests/debug/test_session_debug.py::test_session_2
+2026-05-17 15:09:33 - INFO - SESSION ENDED
+2026-05-17 15:09:34 - INFO - SESSION STARTED: 80a19a0ec11031969fcce8b116bc2710
+2026-05-17 15:09:34 - INFO - PASS: tests/debug/test_session_debug.py::test_session_3
+2026-05-17 15:09:34 - INFO - SESSION ENDED
+2026-05-17 15:09:35 - INFO - SESSION STARTED: a519691a2d9bb16b10b9b0827c893339
+2026-05-17 15:09:49 - INFO - PASS: tests/e2e/test_e2e_notes.py::test_ui_to_api
+2026-05-17 15:09:49 - INFO - SESSION ENDED
+2026-05-17 15:09:50 - INFO - SESSION STARTED: 9dee00de5403b5b32f595d1a603f5ba9
+2026-05-17 15:10:10 - INFO - PASS: tests/e2e/test_e2e_notes.py::test_api_to_ui
+2026-05-17 15:10:10 - INFO - SESSION ENDED
+2026-05-17 15:10:11 - INFO - PASS: tests/negative/test_negative.py::test_empty_payload
+2026-05-17 15:10:12 - INFO - SESSION STARTED: 85431adf2b61be096025194c6ffb03e7
+2026-05-17 15:10:25 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_valid
+2026-05-17 15:10:25 - INFO - SESSION ENDED
+2026-05-17 15:10:25 - INFO - SESSION STARTED: 3e543af4afa411d614a1cdb19c090d22
+2026-05-17 15:11:00 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_invalid_password
+2026-05-17 15:11:00 - INFO - SESSION ENDED
+2026-05-17 15:11:01 - INFO - SESSION STARTED: 56e20b4d992ff32be65137a70fb1e910
+2026-05-17 15:11:09 - INFO - PASS: tests/ui/test_ui_notes.py::test_login_empty
+2026-05-17 15:11:09 - INFO - SESSION ENDED
+2026-05-17 15:11:10 - INFO - SESSION STARTED: 2782741dbe309cb292723e857135d9cd
+2026-05-17 15:11:21 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_title
+2026-05-17 15:11:21 - INFO - SESSION ENDED
+2026-05-17 15:11:22 - INFO - SESSION STARTED: c12ac1af012bc7fc56f25e5f130af1a2
+2026-05-17 15:11:33 - INFO - PASS: tests/ui/test_ui_notes.py::test_create_note_missing_desc
+2026-05-17 15:11:33 - INFO - SESSION ENDED

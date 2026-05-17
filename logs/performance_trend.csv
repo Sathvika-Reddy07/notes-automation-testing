@@ -70,3 +70,58 @@ UI,Invalid Login Page,0.21
 UI,Empty Login Page,0.24
 UI,Missing Title Flow,0.22
 UI,Missing Description Flow,0.27
+API,Fetch Notes Before Delete,0.31
+API,Get Notes API,0.39
+API,Delete Note API,0.36
+API,Create Note API,0.32
+UI,API To UI Flow,0.46
+UI,UI To API Flow,0.28
+UI,Invalid Login Page,0.28
+UI,Missing Title Flow,0.17
+UI,Missing Description Flow,0.19
+UI,Valid Login Page,0.18
+UI,Empty Login Page,0.17
+API,Get Notes API,0.36
+API,Create Note API,0.35
+API,Fetch Notes Before Delete,0.32
+API,Delete Note API,0.36
+UI,Valid Login Page,0.57
+UI,Invalid Login Page,0.28
+UI,Empty Login Page,0.37
+UI,Missing Title Flow,0.18
+UI,Missing Description Flow,0.20
+UI,UI To API Flow,0.27
+UI,API To UI Flow,0.20
+API,Get Notes API,0.60
+API,Create Note API,0.33
+API,Fetch Notes Before Delete,0.32
+API,Delete Note API,0.39
+UI,UI To API Flow,0.18
+UI,API To UI Flow,0.15
+UI,Valid Login Page,0.22
+UI,Invalid Login Page,0.19
+UI,Empty Login Page,0.19
+UI,Missing Title Flow,0.19
+UI,Missing Description Flow,0.19
+API,Get Notes API,0.62
+API,Create Note API,0.80
+API,Fetch Notes Before Delete,0.72
+API,Delete Note API,0.72
+UI,UI To API Flow,0.24
+UI,API To UI Flow,0.33
+UI,Valid Login Page,0.24
+UI,Invalid Login Page,0.23
+UI,Empty Login Page,0.27
+UI,Missing Title Flow,0.23
+UI,Missing Description Flow,0.24
+API,Get Notes API,1.02
+API,Create Note API,0.72
+API,Fetch Notes Before Delete,0.62
+API,Delete Note API,0.61
+UI,UI To API Flow,0.28
+UI,API To UI Flow,0.33
+UI,Valid Login Page,0.31
+UI,Invalid Login Page,0.28
+UI,Empty Login Page,0.32
+UI,Missing Title Flow,0.33
+UI,Missing Description Flow,0.30
